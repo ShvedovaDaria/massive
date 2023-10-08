@@ -1,3 +1,5 @@
+package massive;
+
 import java.util.Scanner;
 import java.util.ArrayList; // Імпортуємо ArrayList для зберігання чисел і результатів
 

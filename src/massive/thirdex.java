@@ -1,3 +1,5 @@
+package massive;
+
 public class thirdex {
     public static void main(String[] args) {
         int[] arr = {-3, -3, -3, 4, 5, 9, 4, 7, 4, 7};
