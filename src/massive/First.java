@@ -1,12 +1,12 @@
 package massive;
 
 import java.util.Scanner;
-import java.util.ArrayList; // Імпортуємо ArrayList для зберігання чисел і результатів
 
-public class firstex {
+public class First {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Double> results = new ArrayList<>(); // Створюємо масив для зберігання чисел і результатів
+        double[] results = new double[100]; // Масив для зберігання результатів
+        int resultIndex = 0; // Індекс для зберігання результатів
 
         while (true) {
             System.out.println("Введите первое число: ");
@@ -19,6 +19,10 @@ public class firstex {
             char operator = scanner.next().charAt(0);
 
             if (operator == 'q') {
+                System.out.println("Масив результатів:");
+                for (int i = 0; i < resultIndex; i++) {
+                    System.out.println(results[i]);
+                }
                 System.out.println("Программа завершена.");
                 break;
             }
@@ -48,16 +52,10 @@ public class firstex {
                     return;
             }
 
-            results.add(result); // Додаємо результат до масиву
-
+            results[resultIndex++] = result; // Зберігаємо результат у масив
             System.out.println("Результат: " + result);
         }
 
-        // Виводимо масив чисел і результатів
-        System.out.println("Масив чисел і результатів:");
-        for (double item : results) {
-            System.out.println(item);
-        }
         scanner.close();
     }
 }
