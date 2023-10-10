@@ -1,6 +1,7 @@
-public class thirdex {
-    public static void main(String[] args) {
-        int[] arr = {-3, -3, -3, 4, 5, 9, 4, 7, 4, 7};
+package massive;
+
+public class Third {
+    public static void countAndPrintMinNumbers(int[] arr) {
         int min = arr[0];
         int count = 1;
 
@@ -13,6 +14,6 @@ public class thirdex {
             }
         }
 
-        System.out.println("У масиві " + count + " чисел зі значенням " + min);
+        System.out.println("У нас " + count + " чисел зі значенням " + min);
     }
 }
